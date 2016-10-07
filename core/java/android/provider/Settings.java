@@ -6978,6 +6978,13 @@ public final class Settings {
         public static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
         /**
+         * Disable expanding quick settings on secure lock screens
+         *
+         * @hide
+         */
+        public static final String LOCK_QS_DISABLED = "lockscreen_qs_disabled";
+
+        /**
          * Whether to use one tap tile action to enable or disable data 
          * @hide
          */
@@ -6989,7 +6996,7 @@ public final class Settings {
          */
         public static final String QS_NIGHT_BRIGHTNESS_VALUE = "qs_night_brightness_value";
 
-       /**
+        /**
          * Status bar battery %
          * 0: Hide the battery percentage
          * 1: Display the battery percentage inside the icon
