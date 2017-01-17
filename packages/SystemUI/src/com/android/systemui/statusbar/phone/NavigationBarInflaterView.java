@@ -140,11 +140,7 @@ public class NavigationBarInflaterView extends FrameLayout implements TunerServi
     @Override
     public void onTuningChanged(String key, String newValue) {
         if (NAV_BAR_VIEWS.equals(key)) {
-            if (!Objects.equals(mCurrentLayout, newValue) ||
-                    // Re-inflate layout even after the saved layout happens to match
-                    // the default one. When onTuningChanged is run again, all Views will
-                    // be inflated correctly.
-                    Objects.equals(mCurrentLayout, getDefaultLayout())) {
+            if (!Objects.equals(mCurrentLayout, newValue)) {
                 clearViews();
                 inflateLayout(newValue);
             }
