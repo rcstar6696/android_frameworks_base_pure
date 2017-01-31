@@ -3795,6 +3795,16 @@ public final class Settings {
         /** @hide */ public static final int HEADS_UP_USER_ON = 1;
 
         /**
+         * Immersive recents options
+         * 0 = Default AOSP look
+         * 1 = Fullscreen
+         * 2 = Statusbar only
+         * 3 = Navbar only
+         * @hide
+         */
+        public static final String IMMERSIVE_RECENTS = "immersive_recents";
+
+        /**
          * Whether the phone ringtone should be played in an increasing manner
          * @hide
          */
@@ -4025,6 +4035,18 @@ public final class Settings {
          * @hide
          */
         public static final String SCREENRECORD_CHORD_TYPE = "screenrecord_chord_type";
+
+        /**
+         * show clear all recents button
+         * @hide
+         */
+        public static final String SHOW_CLEAR_ALL_RECENTS = "show_clear_all_recents";
+
+        /**
+         * location of the clear all rectents button
+         * @hide
+         */
+        public static final String  RECENTS_CLEAR_ALL_LOCATION = "recents_clear_all_location";
 
         /**
          * show lockscreen alarm
@@ -7066,6 +7088,18 @@ public final class Settings {
         public static final String QS_NIGHT_BRIGHTNESS_VALUE = "qs_night_brightness_value";
 
         /**
+         * Allows to store the custom user auto brightness value
+         * @hide
+         */
+        public static final String NIGHT_AUTOBRIGHTNESS_USERVALUE = "night_autobrightness_uservalue";
+
+        /**
+         * Allows to store the custom user manual brightness value
+         * @hide
+         */
+        public static final String NIGHT_MANBRIGHTNESS_USERVALUE = "night_manbrightness_uservalue";
+
+        /**
          * Status bar battery %
          * 0: Hide the battery percentage
          * 1: Display the battery percentage inside the icon
@@ -7085,6 +7119,12 @@ public final class Settings {
          * @hide
          */
         public static final String STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
+
+        /**
+         * Whether to sync the battery tile stile with the statusbar battery icon style
+         * @hide
+         */
+        public static final String STATUS_BAR_BATTERY_STYLE_TILE = "status_bar_battery_style_tile";
 
         /**
          * This are the settings to be backed up.
@@ -7171,7 +7211,8 @@ public final class Settings {
             DOZE_PULSE_ON_PICK_UP,
             DOZE_PULSE_ON_DOUBLE_TAP,
             STATUS_BAR_SHOW_BATTERY_PERCENT,
-            STATUS_BAR_BATTERY_STYLE
+            STATUS_BAR_BATTERY_STYLE,
+            STATUS_BAR_BATTERY_STYLE_TILE
         };
 
         /**
