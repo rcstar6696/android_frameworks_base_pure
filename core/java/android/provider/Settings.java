@@ -4209,6 +4209,18 @@ public final class Settings {
         public static final String TOAST_ICON = "toast_icon";
 
         /**
+         * Whether the phone vibrates on call awnsered
+         * @hide
+         */
+        public static final String VIBRATE_ON_AWNSER = "vibrate_on_awnser";
+
+        /**
+         * Whether the phone vibrates on hangup
+         * @hide
+         */
+        public static final String VIBRATE_ON_HANGUP = "vibrate_on_hangup";
+
+        /**
          * Whether the phone volume up / down effect should be played
          * @hide
          */
