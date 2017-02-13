@@ -347,7 +347,6 @@ public final class Settings {
      * Input: Nothing.
      * <p>
      * Output: Nothing.
-
      */
     @SdkConstant(SdkConstantType.ACTIVITY_INTENT_ACTION)
     public static final String ACTION_WIFI_SETTINGS =
@@ -4209,16 +4208,22 @@ public final class Settings {
         public static final String TOAST_ICON = "toast_icon";
 
         /**
-         * Whether the phone vibrates on call awnsered
+         * Whether the phone vibrates on call connect
          * @hide
          */
-        public static final String VIBRATE_ON_AWNSER = "vibrate_on_awnser";
+        public static final String VIBRATE_ON_CONNECT = "vibrate_on_connect";
 
         /**
-         * Whether the phone vibrates on hangup
+         * Whether the phone vibrates on call waiting
          * @hide
          */
-        public static final String VIBRATE_ON_HANGUP = "vibrate_on_hangup";
+        public static final String VIBRATE_ON_CALLWAITING = "vibrate_on_callwaiting";
+
+        /**
+         * Whether the phone vibrates on disconnect
+         * @hide
+         */
+        public static final String VIBRATE_ON_DISCONNECT = "vibrate_on_disconnect";
 
         /**
          * Whether the phone volume up / down effect should be played
@@ -7088,10 +7093,10 @@ public final class Settings {
         public static final String ONE_HANDED_MODE_UI = "one_handed_mode_ui";
 
         /**
-         * Whether to use one tap tile action to enable or disable data 
+         * Whether to use one tap QS tile action to enable or disable mobile data, wifi, and bluetooth
          * @hide
          */
-        public static final String QS_DATA_ADVANCED = "qs_data_advanced";
+        public static final String QS_EASY_TOGGLE = "qs_easy_toggle";
 
         /**
          * Low brightness level for the advanced night mode tile
